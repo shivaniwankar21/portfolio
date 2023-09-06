@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive personal Portfolio Website</title>
+    <!---custom css link---->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+
+<body>
+    <!------Header Section------>
+    <header>
+        <a href="#" class="logo">Devlo<span>pe</span>r..</a>
+        <ul class="navlist">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </header>
+
+    <!---------Home Section--------------->
+    <section class="home" id="home">
+        <div class="home-text">
+            <div class="slide">
+                <span class="one">I'm Shivani </span>
+                <h2 class="two">Frontend Developer</h2>
+            </div>
+            <a href="https://github.com/shivaniwankar21/resume_wankar" target="_blank">Download CV</a>
+        </div>
+    </section>
+
+    <!---------about Section --------------->
+    <section class="about" id="about">
+        <div class="about-img">
+            <!-- <img src="img/about.jpg"> -->
+            <img src="personal2.jfif" alt="image">
+        </div>
+
+        <div class="about-text">
+            <h2>About <span>Me</span></h2>
+            <h4>Frontend Developer!</h4>
+            <p>I'm actively seeking opportunities to kickstart my career in frontend development. Whether it's an
+                internship, entry-level position, or a chance to contribute to an exciting project, I'm ready to embrace
+                the challenges and opportunities that lie ahead.
+            </p>
+            <a href="#" class="btn">More About</a>
+        </div>
+    </section>
+
+    <!----------Skill section------------>
+    <section class="skills" id="skills">
+        <div class="main-text">
+            <h2><span>My</span>Skills</h2>
+        </div>
+        <ul class="skills-list">
+            <li>
+                <label for="">Html</label>
+                <div class="progress-container">
+
+                    <div class="progress" style="transform: rotate(calc(360deg * 0.75));"></div>
+                    <span class="progress-text">85%</span>
+
+                </div>
+            </li>
+
+            <li>
+                <label for="">CSS</label>
+                <div class="progress-container">
+
+                    <div class="progress css" style="transform: rotate(calc(360deg * 0.75));"></div>
+                    <span class="progress-text">65%</span>
+                </div>
+            </li>
+
+            <li>
+                <label for="">JS</label>
+                <div class="progress-container">
+                    <div class="progress js" style="transform: rotate(calc(360deg * 0.75));"></div>
+                    <span class="progress-text">55%</span>
+                </div>
+            </li>
+        </ul>
+
+    </section>
+
+    <!-- ---------Project Section-------------->
+    <section class="project" id="project">
+        <div class="main-text">
+            <h2><span>My</span>Project</h2>
+        </div>
+        <div class="project-content">
+            <div class="box">
+                <div>
+
+                </div>
+                <h3>Single phase DC Motor</h3>
+                <p>A single-phase motor is an electrically-powered rotary machine that can turn electric energy into
+                    mechanical energy.This project is based on the working principle of a DC motor i.e. when a current
+                    carrying conductoris placed in a magnetic field, a produced mechanical force experiences on that
+                    conductor.
+                </p>
+
+            </div>
+
+            <div class="box">
+                <div>
+
+                </div>
+                <h3>ERP Application</h3>
+                <p>ERP stands for “Enterprise Resource Planning”. This means, this is a software system that is supposed
+                    to address and take care of the entire needs of an Enterprise and it’s resource needs.Student
+                    Recruitment, Course Registration, Grading, Fee Management, Student Services & More. Camu - Education
+                    ERP Software Providers For Colleges & Universities.</p>
+                <!-- <a href="#" class="btn">Read More</a> -->
+            </div>
+
+            <div class="box">
+                <div>
+
+                </div>
+                <h3>Online Job Portal</h3>
+                <p>JobFair is a professional job board that helps the employer, agent and job seeker to find their
+                    talents, dream jobs within a short time with its advanced search engine. It comes with modern design
+                    and clean code to help you extend it further by using HTML,CSS,JS technology.must offer a wide range
+                    of job opportuninties that are relevent to the target audience
+                </p>
+                <!-- <a href="#" class="btn">Read More</a> -->
+            </div>
+        </div>
+
+    </section>
+
+
+    <!------------------Contact section------------>
+    <section class="contact" id="contact">
+        <div class="contact-text">
+            <h2>Contact <span>Me!</span></h2>
+            <div class="list">
+                <li><a href="https://www.linkedin.com/in/shivani-kukankar-b96b38247">linkdin</a></li>
+                <li><a href="#">shivanikukankar@gmail.com</a></li>
+
+            </div>
+
+            <div class="contact-icons">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#"><i class='bx bxl-youtube'></i></a>
+            </div>
+
+        </div>
+        <div class="contact-form">
+            <form action="">
+                <input type="name" placeholder="Your Name " required>
+                <input type="email" placeholder="Your Email " required>
+                <input type="number" placeholder="your Mobile Number" required>
+                <textarea name="" id="" cols="35" rows="10" placeholder="How Can I Help You " required></textarea>
+                <input type="submit" value="Send Message" class="submit" required>
+            </form>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
