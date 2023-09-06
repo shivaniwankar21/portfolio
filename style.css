@@ -9,7 +9,8 @@
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -45,28 +46,31 @@ header {
 }
 
 span {
-    color:  #05b4ff;
+    color: #05b4ff;
 }
 
 .navlist {
     display: flex;
-    }
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
 
 .navlist a {
     color: #ccc;
     font-size: 17px;
     font-weight: 500;
-    margin: 0 25px;
+
     transition: all .45s ease;
-    justify-content:center;
+    justify-content: center;
 }
 
 .navlist a:hover {
-    color:  #05b4ff;
+    color: #05b4ff;
 }
 
 .navlist a.active {
-    color:  #05b4ff;
+    color: #05b4ff;
 }
 
 #menu-icon {
@@ -81,7 +85,8 @@ span {
 section {
     padding: 160px 15% 120px;
 }
-   /* home section */
+
+/* home section */
 .home {
     position: relative;
     height: 100vh;
@@ -91,7 +96,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-   
+
 }
 
 .slide {
@@ -107,7 +112,7 @@ section {
 }
 
 .two {
-  
+
     font-size: 3rem;
 }
 
@@ -134,7 +139,8 @@ section {
     line-height: 1.8;
     margin-bottom: 40px;
 }
-.home-text a{
+
+.home-text a {
     text-decoration: none;
     background: black;
     color: white;
@@ -143,20 +149,20 @@ section {
     position: relative;
 }
 
-.home-text a:before{
-      content: '';
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      width: 100%;
-      height: 100%;
-      background:  #05b4ff;
-      z-index: -1;
+.home-text a:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100%;
+    height: 100%;
+    background: #05b4ff;
+    z-index: -1;
 }
 
 
 /* about section */
- .about {
+.about {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     align-items: center;
@@ -190,10 +196,10 @@ section {
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.8;
     margin-bottom: 4rem;
-} 
+}
 
 
- .main-text {
+.main-text {
     text-align: center;
 }
 
@@ -206,16 +212,17 @@ section {
 .main-text h2 {
     font-size: 3rem;
     line-height: 1;
-} 
+}
 
 /* Contact section */
 .contact {
     background: #202020;
     display: grid;
-    /* grid-template-columns: repeat(2, 1fr); */
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     align-items: center;
     gap: 2.5rem;
+    max-width: 90vw;
+
 }
 
 .contact-text h4 {
@@ -275,7 +282,7 @@ section {
 
 .contact-icons i:hover {
 
-    color:  #05b4ff;
+    color: #05b4ff;
 }
 
 .contact-form form {
@@ -303,7 +310,7 @@ form textarea {
 .contact-form .submit {
     display: inline-block;
     font-size: 16px;
-    background:  #05b4ff;
+    background: #05b4ff;
     color: #fff;
     width: 160px;
     transition: all .45s ease;
@@ -316,17 +323,14 @@ form textarea {
 
 /* skills section */
 
-.skills{
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
-  }
-  .skills-list{
+
+.skills-list {
     padding: 2rem 0px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-  }
+}
+
 .progress-container {
     width: 150px;
     height: 150px;
@@ -336,9 +340,9 @@ form textarea {
     justify-content: center;
     align-items: center;
     position: relative;
-  }
+}
 
-  .progress {
+.progress {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -346,27 +350,29 @@ form textarea {
     background-color: #3498db;
     position: absolute;
     transform: rotate(0deg);
-  }
+}
 
-  .skills label{
+.skills label {
     color: white;
     font-size: 20px;
-  }
-  .css{
+}
+
+.css {
     background-color: #0f4264;
-  }
-  .js{
+}
+
+.js {
     background-color: #3a627c;
-  }
+}
 
-  /* project */
+/* project */
 
- .project {
+.project {
     background: #202020;
 
-} 
+}
 
- .project-content {
+.project-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     align-items: center;
@@ -401,7 +407,7 @@ form textarea {
     cursor: pointer;
 }
 
-   
+
 /* media query */
 
 @media (max-width: 1480px) {
@@ -414,35 +420,42 @@ form textarea {
         padding: 110px 3% 60px;
     }
 
-    
+
 }
-@media (max-width: 1100px){
-    .home-text h3{
+
+@media (max-width: 1100px) {
+    .home-text h3 {
         font-size: 2.5rem;
     }
-    .home{
+
+    .home {
         height: 87vh;
     }
 }
-@media (max-width:920){
-    .about{
+
+@media (max-width:920) {
+    .about {
         grid-template-columns: 1fr;
 
     }
-    .about-img img{
+
+    .about-img img {
         width: 100%;
         height: auto;
         max-width: 100%;
     }
-    .contact{
+
+    .contact {
         grid-template-columns: 1fr;
     }
 }
-@media (min-width: 480px){
-    #menu-icon{
+
+@media (min-width: 480px) {
+    #menu-icon {
         display: block;
     }
-    .navlist a{
+
+    .navlist a {
         display: block;
         margin: 17px;
         font-size: 20px;
@@ -450,24 +463,37 @@ form textarea {
         color: #fff;
 
     }
-    .navlist a:hover{
-        color:  #05b4ff;
+
+    .navlist a:hover {
+        color: #05b4ff;
     }
-    navlist a.active{
+
+    navlist a.active {
         color: #fff;
     }
-    .navlist.open{
+
+    .navlist.open {
         top: 100%;
     }
-    .project{
+
+    .project {
         margin: 20px auto;
     }
 }
-@media (max-width:480px){
-    .skills-list{
+
+@media (max-width:480px) {
+    .skills-list {
         flex-direction: column;
     }
 
+    .navlist {
+        justify-content: space-between;
+
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
 }
- 
